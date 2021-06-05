@@ -1,0 +1,39 @@
+{
+  "name": "msvc-inventory",
+  "version": "1.0.0",
+  "description": "Inventory microservice subgraph",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"No test specified\nImplement ASAP\"",
+    "prepare": "husky install",
+    "start": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spencer814/msvc-inventory.git"
+  },
+  "author": "Andre Newman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spencer814/msvc-inventory/issues"
+  },
+  "homepage": "https://github.com/Spencer814/msvc-inventory#readme",
+  "dependencies": {
+    "@apollo/federation": "^0.25.1",
+    "apollo-server": "^2.25.0",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "ts-node": "^10.0.0"
+  }
+}

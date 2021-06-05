@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "CommonJs",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "./dist",
+    "pretty": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext"
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "./node_modules/**/*",
+    "./node_modules/**/**",
+    "./jest.config.ts",
+    "./src/utility/jsdoc.js"
+  ]
+}
