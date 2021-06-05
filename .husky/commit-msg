@@ -1,18 +1,5 @@
 #!/bin/sh
-#
-# Automatically adds jira ticket number to every commit message.
-
-if [ -z "$BRANCHES_TO_SKIP" ]; then
-  BRANCHES_TO_SKIP=(master develop test main)
-fi
 
 BRANCH_NAME=$(git branch | grep '*' | sed 's/* //')
 
-BRANCH_EXCLUDED=$(printf "%s\n" "${BRANCHES_TO_SKIP[@]}" | grep -c "^$BRANCH_NAME$")
-
-if [ -n "$BRANCH_NAME" ] && ! [[ $BRANCH_EXCLUDED -eq 1 ]]; then
-  JIRA_ISSUE=$(echo $BRANCH_NAME | awk 'BEGIN{FS="/|-"; OFS="\t"}{print $2"-"$3}')
-
-  echo "$JIRA_ISSUE"': '$(cat "$1") > "$1"
-fi
-
+echo "$BRANCH_NAME"
